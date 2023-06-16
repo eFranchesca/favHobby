@@ -9,26 +9,116 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <style>
 
-    body {
-      background: linear-gradient(180.2deg, rgb(30, 33, 48) 6.8%, rgb(74, 98, 110) 131%);
+body {
+      background: linear-gradient(to top, #e6b980 0%, blanchedalmond 100%);
       background-repeat: no-repeat;
       background-size: cover;
     }
 
     h1, h2 {
+      text-align: center;
+    }
+    
+    p {
+      font-size: 14;
+      line-height: 1.5;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+
+    .history-button {
       display: block;
       margin: 0 auto;
-      text-align: center;
-      color: antiquewhite;
-      max-width: 600px;
+      border: 2px solid blanchedalmond;
+      background: whitesmoke;
+      font-size: 18px;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: all 150ms ease-in-out;
     }
 
+    button:hover {
+      background: blanchedalmond;
+      cursor: pointer;
+    }
+   
     .theme {
-      text-align: center;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 20px;
     }
 
+    .theme-button {
+      display: block;
+      margin: 0 auto;
+      font-size: 14px;
+      background: rgb(3, 3, 42);
+      color: whitesmoke;
+      border: 1px solid blanchedalmond;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: all 150ms ease-in-out;
+    }
+
+    .theme-button:hover {
+      color: rgb(3, 3, 44);
+      border: 1px solid rgb(3, 3, 44);
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 600px;
+      background: whitesmoke;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px auto;
+    }
+
+    .grid {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     grid-gap: 10px;
+    }
+
+    .grid img {
+      width: 100%;
+    }
+
+    .ziggies-menu-picture {
+      transition: all 150ms ease-in-out;
+    }
+
+    .ziggies-menu-picture:hover {
+      transform: scale(1.8);
+      cursor: pointer;
+    } 
+
+    .zoom-pictures {
+      transition: all 150ms ease-in-out;
+    }
+
+    .zoom-pictures:hover {
+      transform: scale(1.8);
+    }
+
+    .dark {
+      color: whitesmoke;
+      background: linear-gradient(to top, black 0%, rgb(3, 3, 44) 100%);
+    }
+
+    .dark .container {
+      color: whitesmoke;
+      background: rgb(3, 3, 42);
+    }
+
+    .dark .history-button {
+      color: whitesmoke;
+      background: rgb(3, 3, 44);
+      border: 1px solid blanchedalmond;
+      }
+    
     .footer {
       text-align: center;
       line-height: 1;
@@ -37,20 +127,52 @@
   </style>
 </head>
 <body>
-  
-<h1>Hi, I'm Eva and my favorite hobby is photography 📸</h1>
-<h2>
-  <p>In this age of technology that we are living in, photography is an easy hobby to get into. It can be as simple or as complex as you want to make it. I started taking pictures with a simple camera that used 35mm film, now I mainly rely on the camera that is in Google Pixel 6XL.
-  </p>
-  <p>The same goes for the subject. There is a lot of beauty in both simple photos of flowers or everyday life and complex photo shoots, where everything is perfectly choreographed.</p>
-</h2>
 
-<div class="theme">
-  <button type="button" class="btn btn-light">Light</button>
-  </div>
-<div class="footer">
-  <footer>They say "A picture is worth a thousand words."</footer>
-  <footer>This page was open-source coded with 💗 Eva Godfrey</footer>
-</div>
+  <body cz-shortcut-listen="true" class="">
+    <div class="theme">
+      <button class="theme-button">Change Theme</button>
+    </div>
+
+      <div class="container">
+        <h1>Photography</h1>
+        <h2>Art, Science, Hobby</h2>
+        <p>Photography, what does that word mean to you? Does it bring up images in your mind of family vaction photos taken when you were a kid? Maybe you are reminded of all those profesionally taken Christmas photos for holiday greeting cards. Or maybe you were just reminded of those very old burlesque tintypes that are stashed in a safe place. Photography colors our world, every picture has a story. Photography is a facinating mixture of art, science, and the desire to capture a precise second in time. It can be as simple or as complex as the person taking the picture wants it to be.</p>
+    
+      <div class="grid">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/604/original/flashlighSky.jpg?1679239984" class="zoom-pictures">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/605/original/rainbowBend1.jpg?1679240021" class="zoom-pictures">
+        <a href="https://www.ziggieandmaddogs.com/menu/" target="_blank">
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/603/original/ziggieNMD1.jpg?1679239944" class="ziggies-menu-picture">
+        </a>
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/606/original/renFest1.jpg?1679240142" class="zoom-pictures">
+        </div>  
+          <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/072/530/original/PXL_20201029_220435950.PANO.jpg?1679201120" class="zoom-pictures">
+      
+  
+      <a href="https://www.eastman.org/" target="_blank">
+        <button class="history-button">Photography Museum</button>
+      </a>
+    </div>
+   
+    <div class="footer">
+      <footer>They say "A picture is worth a thousand words."</footer>
+      <footer>This page was open-source coded with 💗 Eva Godfrey</footer>
+    </div>
+
+    <script>
+      function changeTheme() {
+        let body = document.querySelector("body");
+  
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+  
+      let themeButton = document.querySelector(".theme-button");
+      themeButton.addEventListener("click", changeTheme); 
+    </script> 
+
 </body>
 </html>
